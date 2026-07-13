@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beginner Guide — GTA Mods</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <h1>Beginner Guide</h1>
+      <div class="nav-actions">
+        <a class="nav-link" href="./index.html">Home</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="guide">
+      <h2>Story Mode Modding — Safe Essentials</h2>
+      <p>This guide is for offline Story Mode modding. Follow each step carefully, keep backups, and do not use mods in GTA Online.</p>
+
+      <div class="step">
+        <h3>Requirements</h3>
+        <ul>
+          <li><strong>Backup first:</strong> Copy your GTA V folder or at least the game executable and any files you change.</li>
+          <li><strong>Use a <code>mods</code> folder:</strong> Install replacements inside <code>mods</code> so the original game files remain untouched.</li>
+          <li><strong>Script Hook V:</strong> Required for many script mods. Place the ASI loader and <code>ScriptHookV.dll</code> into the GTA V root folder.</li>
+          <li><strong>Script Hook V .NET:</strong> Required for .NET-based script mods. Install files into the GTA V root and create a <code>scripts</code> folder for <code>.dll</code> mods.</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <h3>Common support files</h3>
+        <ul>
+          <li><strong>NativeUI:</strong> Used by many script mods for menus and interfaces.</li>
+          <li><strong>iFruitAddon2:</strong> Required by some vehicle and trainer mods.</li>
+          <li><strong>Enable All Interiors:</strong> An interior unlock script for story mode scenarios.</li>
+        </ul>
+      </div>
+
+      <div class="step">
+        <h3>Recommended workflow</h3>
+        <ol>
+          <li>Install OpenIV and enable the <code>mods</code> folder.</li>
+          <li>Install Script Hook V, then Script Hook V .NET if needed.</li>
+          <li>Place scripts in <code>scripts</code> and assets inside <code>mods</code> as instructed.</li>
+          <li>Test each mod offline in Story Mode before adding another.</li>
+          <li>Keep a clean backup copy of your original game files.</li>
+        </ol>
+      </div>
+
+      <div class="step">
+        <h3>Helpful external links</h3>
+        <ul>
+          <li><a href="https://www.dev-c.com/gtav/scripthookv/" target="_blank" rel="noopener noreferrer">Script Hook V — Official</a></li>
+          <li><a href="https://github.com/crosire/scripthookvdotnet/releases" target="_blank" rel="noopener noreferrer">ScriptHookVDotNet — Releases</a></li>
+          <li><a href="https://github.com/Guad/NativeUI/releases" target="_blank" rel="noopener noreferrer">NativeUI — Releases</a></li>
+          <li><a href="https://github.com/Bob74/iFruitAddon2/releases" target="_blank" rel="noopener noreferrer">iFruitAddon2 — Releases</a></li>
+          <li><a href="https://www.gta5-mods.com/scripts/enable-all-interiors-wip" target="_blank" rel="noopener noreferrer">Enable All Interiors (WIP)</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <button class="category-toggle" aria-expanded="false">World & Environment</button>
+        <div class="category-content" hidden>
+          <ul class="mods-list">
+            <li><a href="https://www.gta5-mods.com/misc/cops-back-on-the-beat" target="_blank" rel="noopener noreferrer">Cops Back on the Beat</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/ambient-fx" target="_blank" rel="noopener noreferrer">AmbientFX</a> — community rating: 9/10</li>
+            <li><a href="https://www.gta5-mods.com/maps/forests-of-san-andreas-revised" target="_blank" rel="noopener noreferrer">Forests of San Andreas</a> — community rating: 8/10</li>
+          </ul>
+          <button class="install-toggle" aria-expanded="false">Installation notes</button>
+          <div class="install-content" hidden>
+          <ul class="install-list">
+            <li>Cops Back on the Beat — .dll → <code>scripts/</code>. If package includes .asi, copy to GTA root.</li>
+            <li>AmbientFX — .dll → <code>scripts/</code>, .asi → GTA root.</li>
+            <li>Forests of San Andreas — extract files, then use OpenIV → <strong>Tools → Package Installer</strong> and select the provided <code>.oiv</code>, or place assets into <code>mods/</code>.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <button class="category-toggle" aria-expanded="false">Vehicles</button>
+        <div class="category-content" hidden>
+          <ul class="mods-list">
+            <li><a href="https://www.gta5-mods.com/scripts/vehicle-theft-missions-net" target="_blank" rel="noopener noreferrer">Vlad&apos;s Export Garage</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/wheelman" target="_blank" rel="noopener noreferrer">Wheelman Missions</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/premium-deluxe-motorsports-car-shop" target="_blank" rel="noopener noreferrer">Premium Deluxe Motorsport (PMD)</a> — community rating: 9/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/imnotmental-s-dealership-mod-custom-build" target="_blank" rel="noopener noreferrer">Dealership Mod</a> — community rating: 8/10</li>
+          </ul>
+          <button class="install-toggle" aria-expanded="false">Installation notes</button>
+          <div class="install-content" hidden>
+          <ul class="install-list">
+            <li>Vlad&apos;s Export Garage — .dll → <code>scripts/</code>.</li>
+            <li>Wheelman Missions — .dll → <code>scripts/</code>.</li>
+            <li>PMD — if .dll → <code>scripts/</code>; if dlcpack/.oiv → extract and install via OpenIV → <strong>Tools → Package Installer</strong>.</li>
+            <li>Dealership Mod — .dll → <code>scripts/</code>.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <button class="category-toggle" aria-expanded="false">Police</button>
+        <div class="category-content" hidden>
+          <ul class="mods-list">
+            <li><a href="https://www.gta5-mods.com/scripts/better-chases" target="_blank" rel="noopener noreferrer">Better Chases+</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/misc/cops-back-on-the-beat" target="_blank" rel="noopener noreferrer">Cops Back on the Beat</a> — community rating: 8/10</li>
+          </ul>
+          <button class="install-toggle" aria-expanded="false">Installation notes</button>
+          <div class="install-content" hidden>
+          <ul class="install-list">
+            <li>Better Chases+ — .dll → <code>scripts/</code>, or .asi → GTA root.</li>
+            <li>Cops Back on the Beat — .dll → <code>scripts/</code>, or use OpenIV if it includes assets.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <button class="category-toggle" aria-expanded="false">Combat</button>
+        <div class="category-content" hidden>
+          <ul class="mods-list">
+            <li><a href="https://www.gta5-mods.com/weapons/realistic-weapons-sounds" target="_blank" rel="noopener noreferrer">Realistic Weapon Sounds</a> — community rating: 9/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/gun-recoil" target="_blank" rel="noopener noreferrer">Gun Recoil</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/misc/improvements-in-gore" target="_blank" rel="noopener noreferrer">Improvements in Gore</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/misc/realistic-effects-of-explosions" target="_blank" rel="noopener noreferrer">Epic Explosions XX</a> — community rating: 9/10</li>
+          </ul>
+          <button class="install-toggle" aria-expanded="false">Installation notes</button>
+          <div class="install-content" hidden>
+          <ul class="install-list">
+            <li>Realistic Weapon Sounds — install .rpf assets with OpenIV (Tools → Package Installer) or copy into <code>mods/</code>.</li>
+            <li>Gun Recoil — .dll → <code>scripts/</code>.</li>
+            <li>Improvements in Gore — .rpf assets → OpenIV Tools → Package Installer or copy into <code>mods/</code>.</li>
+            <li>Epic Explosions XX — .asi → GTA root; assets → OpenIV Tools → Package Installer or <code>mods/</code>.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <button class="category-toggle" aria-expanded="false">Crime & Gameplay</button>
+        <div class="category-content" hidden>
+          <ul class="mods-list">
+            <li><a href="https://www.gta5-mods.com/scripts/rob-people" target="_blank" rel="noopener noreferrer">Low Life Crime</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/lock-picking" target="_blank" rel="noopener noreferrer">Lock Picking</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/new-street-phone-missions" target="_blank" rel="noopener noreferrer">New Street Phone Missions</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/the-mob" target="_blank" rel="noopener noreferrer">The Mob</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/the-gang" target="_blank" rel="noopener noreferrer">The Gang</a> — community rating: 8/10</li>
+            <li><strong>Warning:</strong> Do not install <code>TheGangFix.oiv</code> because it may cause a crash.</li>
+            <li><a href="https://www.gta5-mods.com/scripts/stockade-stickups" target="_blank" rel="noopener noreferrer">Stockade Stickups</a> — community rating: 7/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/convoys-and-other-hits" target="_blank" rel="noopener noreferrer">Convoys and Other Hits</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/rob-fleeca-v2" target="_blank" rel="noopener noreferrer">Fleeca Bank Heists</a> — community rating: 8/10</li>
+            <li><strong>Note:</strong> This is not compatible with <strong>Low Life Crime</strong>.</li>
+            <li><a href="https://www.gta5-mods.com/scripts/atm-robberies" target="_blank" rel="noopener noreferrer">ATM Robberies</a> — community rating: 7/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/the-pacific-standard" target="_blank" rel="noopener noreferrer">The Pacific Standard Heist</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/the-vangelico-heist" target="_blank" rel="noopener noreferrer">The Vangelico Heist</a> — community rating: 8/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/paleto-bay-bank-heist" target="_blank" rel="noopener noreferrer">Paleto Bay Bank Heist</a> — community rating: 7/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/sharmoota-art-heist" target="_blank" rel="noopener noreferrer">The Sharmoota Art Heist</a> — community rating: 7/10</li>
+            <li><a href="https://www.gta5-mods.com/scripts/ls-life" target="_blank" rel="noopener noreferrer">LS Life</a> — community rating: 8/10</li>
+          </ul>
+          <h4>Installation notes</h4>
+          <ul class="install-list">
+            <li>Low Life Crime — .dll → <code>scripts/</code>.</li>
+            <li>Lock Picking — .dll → <code>scripts/</code>.</li>
+            <li>New Street Phone Missions — .dll → <code>scripts/</code>.</li>
+            <li>The Mob — .dll → <code>scripts/</code>.</li>
+            <li>The Gang — .dll → <code>scripts/</code>. Do not install <code>TheGangFix.oiv</code>.</li>
+            <li>Stockade Stickups — .dll → <code>scripts/</code>.</li>
+            <li>Convoys and Other Hits — .dll → <code>scripts/</code>.</li>
+            <li>Fleeca Bank Heists — .dll → <code>scripts/</code>. Not compatible with Low Life Crime.</li>
+            <li>ATM Robberies — .dll → <code>scripts/</code>.</li>
+            <li>The Pacific Standard Heist — .dll → <code>scripts/</code>.</li>
+            <li>The Vangelico Heist — .dll → <code>scripts/</code>.</li>
+            <li>Paleto Bay Bank Heist — .dll → <code>scripts/</code>.</li>
+            <li>The Sharmoota Art Heist — .dll → <code>scripts/</code>.</li>
+            <li>LS Life — .dll → <code>scripts/</code>.</li>
+          </ul>
+        </div>
+      </div>
+
+      
+
+      <a class="btn" href="./index.html">Return Home ➡️</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-links">
+      <a class="btn ghost" href="./index.html">Home</a>
+    </div>
+  </footer>
+</body>
+</html>
