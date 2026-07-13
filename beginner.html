@@ -22,10 +22,154 @@
 
   <main class="container">
     <section class="guide">
+      <div class="page-progress" role="navigation" aria-label="Page progress">
+        <a href="#requirements" class="progress-step current">Requirements</a>
+        <a href="#folder-setup" class="progress-step">Folder Setup</a>
+        <a href="#graphics" class="progress-step">Graphics</a>
+        <a href="#vehicles" class="progress-step">Vehicles</a>
+        <a href="#police" class="progress-step">Police</a>
+        <a href="#combat" class="progress-step">Combat</a>
+        <a href="#gameplay" class="progress-step">Gameplay</a>
+      </div>
+
       <h2>Story Mode Modding — Safe Essentials</h2>
       <p>This guide is for offline Story Mode modding. Follow each step carefully, keep backups, and do not use mods in GTA Online.</p>
 
-      <div class="step">
+      <div class="search-panel">
+        <label for="modSearch">Search mods</label>
+        <input id="modSearch" type="search" placeholder="Type a mod name or keyword...">
+      </div>
+
+      <div class="mod-gallery" id="modGallery">
+        <h3>Featured mods</h3>
+        <div class="card-grid" id="modCards">
+          <article class="mod-card" data-title="NaturalVision" data-description="High-end photo realism graphics overhaul for GTA V." data-tags="graphics realism" data-category="graphics">
+            <img src="https://via.placeholder.com/420x220/0f172a/ffffff?text=NaturalVision" alt="NaturalVision" />
+            <div class="mod-card-body">
+              <h4>NaturalVision</h4>
+              <p>Improves lighting, weather, and visual effects for a more realistic GTA V.</p>
+              <div class="mod-meta">
+                <span class="tag easy">🟢 Easy</span>
+                <span class="tag time">⏱ 3 minutes</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>AmbientFX</li><li>Forests of San Andreas</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Other graphics overhauls</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/misc/naturalvision-photorealistic" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+          <article class="mod-card" data-title="AmbientFX" data-description="Adds realistic ambient effects and atmosphere to GTA V." data-tags="environment graphics" data-category="graphics">
+            <img src="https://via.placeholder.com/420x220/111827/ffffff?text=AmbientFX" alt="AmbientFX" />
+            <div class="mod-card-body">
+              <h4>AmbientFX</h4>
+              <p>Makes the world feel more alive with improved weather and lighting atmosphere.</p>
+              <div class="mod-meta">
+                <span class="tag medium">🟡 Medium</span>
+                <span class="tag time">⏱ 2 minutes</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>NaturalVision</li><li>Realistic Weapon Sounds</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Other ambient effect mods</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/scripts/ambient-fx" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+          <article class="mod-card" data-title="Cops Back on the Beat" data-description="Adds new police behavior and patrols for a more realistic law enforcement system." data-tags="police realism" data-category="police">
+            <img src="https://via.placeholder.com/420x220/0f172a/ffffff?text=Cops+Back+on+the+Beat" alt="Cops Back on the Beat" />
+            <div class="mod-card-body">
+              <h4>Cops Back on the Beat</h4>
+              <p>Improves traffic stops, patrols, and police response for story mode action.</p>
+              <div class="mod-meta">
+                <span class="tag medium">🟡 Medium</span>
+                <span class="tag time">⏱ 3 minutes</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>Better Chases+</li><li>AmbientFX</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Other police overhauls</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/misc/cops-back-on-the-beat" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+          <article class="mod-card" data-title="Premium Deluxe Motorsport" data-description="Adds car dealership gameplay and custom vehicle purchasing options." data-tags="vehicles cars" data-category="vehicles">
+            <img src="https://via.placeholder.com/420x220/111827/ffffff?text=PMD" alt="Premium Deluxe Motorsport" />
+            <div class="mod-card-body">
+              <h4>Premium Deluxe Motorsport</h4>
+              <p>Adds a realistic car dealer system with new shops and vehicle purchases.</p>
+              <div class="mod-meta">
+                <span class="tag medium">🟡 Medium</span>
+                <span class="tag time">⏱ 4 minutes</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>Dealership Mod</li><li>Wheelman Missions</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Vehicle pack installers</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/scripts/premium-deluxe-motorsports-car-shop" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+          <article class="mod-card" data-title="Realistic Weapon Sounds" data-description="Replaces weapon audio with richer, more powerful sounds." data-tags="combat sound" data-category="combat">
+            <img src="https://via.placeholder.com/420x220/0f172a/ffffff?text=Realistic+Weapon+Sounds" alt="Realistic Weapon Sounds" />
+            <div class="mod-card-body">
+              <h4>Realistic Weapon Sounds</h4>
+              <p>Upgrades gun fire, explosions, and bullet impacts for stronger combat audio.</p>
+              <div class="mod-meta">
+                <span class="tag easy">🟢 Easy</span>
+                <span class="tag time">⏱ 1 minute</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>AmbientFX</li><li>Realistic Recoil</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Other audio packs</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/weapons/realistic-weapons-sounds" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+          <article class="mod-card" data-title="Lock Picking" data-description="Adds realistic lock picking mechanics for new crime gameplay." data-tags="gameplay crime" data-category="gameplay">
+            <img src="https://via.placeholder.com/420x220/111827/ffffff?text=Lock+Picking" alt="Lock Picking" />
+            <div class="mod-card-body">
+              <h4>Lock Picking</h4>
+              <p>Enables interactive lock picking for shops, cars, and doors in story missions.</p>
+              <div class="mod-meta">
+                <span class="tag medium">🟡 Medium</span>
+                <span class="tag time">⏱ 2 minutes</span>
+              </div>
+              <div class="compatibility">
+                <strong>Compatible With:</strong>
+                <ul><li>Low Life Crime</li><li>ATM Robberies</li></ul>
+                <strong>Conflicts:</strong>
+                <ul><li>Other crime systems</li></ul>
+              </div>
+              <a class="btn" href="https://www.gta5-mods.com/scripts/lock-picking" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section class="realism-builder">
+        <h3>Build Your Realism Pack</h3>
+        <p>Select the systems you want and get a recommended mod list.</p>
+        <div class="builder-options">
+          <label><input type="checkbox" value="graphics"> Better Graphics</label>
+          <label><input type="checkbox" value="police"> Police System</label>
+          <label><input type="checkbox" value="cars"> Better Cars</label>
+          <label><input type="checkbox" value="sound"> Realistic Sounds</label>
+          <label><input type="checkbox" value="crime"> Crime Gameplay</label>
+          <label><input type="checkbox" value="immersion"> Immersion</label>
+        </div>
+        <button id="buildPackBtn" class="btn secondary">Generate recommended mods</button>
+        <div id="buildRecommendation" class="build-output" hidden></div>
+      </section>
+
+      <div class="step" id="requirements">
         <h3>Requirements</h3>
         <ul>
           <li><strong>Backup first:</strong> Copy your GTA V folder or at least the game executable and any files you change.</li>
@@ -53,6 +197,15 @@
           <li>Test each mod offline in Story Mode before adding another.</li>
           <li>Keep a clean backup copy of your original game files.</li>
         </ol>
+      </div>
+
+      <div class="step" id="folder-setup">
+        <h3>Folder Setup</h3>
+        <ul>
+          <li>Create a <code>mods</code> folder in your GTA root so OpenIV can install replacements safely.</li>
+          <li>Create a <code>scripts</code> folder inside GTA root for .NET script mods.</li>
+          <li>Keep original files unchanged by placing mod files only in <code>mods</code> or <code>scripts</code>.</li>
+        </ul>
       </div>
 
       <div class="step">
